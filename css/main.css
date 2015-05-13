@@ -95,6 +95,150 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  /*  ===================================
+      general
+      =================================== */
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .container {
+        max-width: 200em;
+        margin: 0 auto;
+        padding: 0 5%;
+      }
+
+
+
+  /*  ===================================
+      header
+      =================================== */
+
+      header {
+        margin: 0 0 30px 0;
+        padding: 5px 0 0 0;
+        width: 100%;
+        background-color: #008eff;
+        color: #fff;
+      }
+
+      .title {
+        float: left;
+        width: 50%;
+        text-align: center;
+        margin: 0;
+      }
+
+      .myInfo {
+        /*float: left;*/
+        text-align: center;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        display: inline-block; 
+      }
+
+
+
+  /*  ===================================
+      nav
+      =================================== */
+
+      nav {
+        float: left;
+        margin: 5px 2.5%;
+        width: 25%;
+        background-color: lightgrey;
+      }
+
+      nav ul {
+        list-style: none;
+      }
+
+      nav img {
+        display: block;
+        margin: 5px auto;
+        max-width: 200px;
+
+      }
+
+
+
+  /*  ===================================
+      section
+      =================================== */
+
+      .articleContainer {
+        
+        background-color: lightyellow;
+        float: left;
+        margin: 0 2.5%;
+        width: 65%;
+        
+      }
+
+
+
+  /*  ===================================
+      article
+      =================================== */
+
+      article {
+        margin-bottom: 50px;
+      }
+
+      .articleContent {
+        /*padding: 0 3px;*/
+      }
+
+      article img {
+        float: right;
+        width: 200px;
+        margin: 0 0 10px 10px;
+        display: inline-block;
+      }
+
+      .articleFooter {
+        
+      }
+
+
+
+
+  /*  ===================================
+      footer
+      =================================== */
+
+      footer {
+        font-size: 1.75em;
+        text-align: center;
+        clear: both;
+        margin: 10px 0 30px 0;
+        padding-top: 50px;
+        color: #ccc;
+      }
+
+
+
+
+  /*  ===================================
+      colors
+      =================================== */
+
+      /* myInfo link */
+      header a, header a:visited {
+        color: #fff;
+      }
+
+      /* selected myInfo link */
+      header a.selected, header a:hover {
+        color: #0063b2;
+      }
 
 
 
