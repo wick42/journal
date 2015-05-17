@@ -42,7 +42,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ffb92a;
     margin: 1em 0;
     padding: 0;
 }
@@ -99,6 +99,11 @@ textarea {
       general
       =================================== */
 
+      * {
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+      }
+
       a {
         text-decoration: none;
       }
@@ -107,13 +112,35 @@ textarea {
         max-width: 100%;
       }
 
-      .container {
-        max-width: 200em;
-        margin: 0 auto;
-        padding: 0 5%;
+      h5 {
+        font-weight: 100;
       }
 
+      .container {
+        background-color: rgba(150, 217, 255, .5);
+        /*border: 1px solid tomato;*/
+        border: 2px solid #000;
+        max-width: 64em;
+        margin: 0 auto;
+        /*padding: 0 0;*/
+        
+      }
 
+      .title,
+      .info, {
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                     0px 8px 13px rgba(0,0,0,0.1),
+                     0px 18px 23px rgba(0,0,0,0.1);
+      }
+      
+      .articleTitle,
+      .articleSubtitle {
+        text-shadow: 3px 3px 10px #919191;
+      }
+
+      header, footer {
+        clear: left;
+      }
 
   /*  ===================================
       header
@@ -121,26 +148,51 @@ textarea {
 
       header {
         margin: 0 0 30px 0;
-        padding: 5px 0 0 0;
-        width: 100%;
-        background-color: #008eff;
+        border-bottom: 10px solid lightslategrey;
+        /*padding: 5px 5px;*/
+        /*max-width: 200em;*/
+        /*background-color: #008eff;*/
+        background: #008eff url('../header.jpg') no-repeat top;
         color: #fff;
+        float: left;
+        /*display: block;*/
+        width: 100%;
+        /*height: 200px;*/
+        
       }
+
+      /*header  .title,
+              .info {
+                text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                             0px 8px 13px rgba(0,0,0,0.1),
+                             0px 18px 23px rgba(0,0,0,0.1);
+              }*/
 
       .title {
+        width: 65%;
+        /*height: 100px;*/
         float: left;
-        width: 50%;
-        text-align: center;
-        margin: 0;
+        margin: auto 0;
+        padding: 30px 20px;
+        /*display: inline-block;*/
+        /*border: 2px solid yellow;*/
       }
 
-      .myInfo {
-        /*float: left;*/
-        text-align: center;
-        width: 50%;
-        margin: 0;
-        padding: 0;
-        display: inline-block; 
+      .info {
+        width: 35%;
+        
+        float: left;
+        padding: 30px 10px;
+        /*border: 2px solid yellow; */
+      }
+
+      .info ul {
+        list-style: none;
+      }
+
+      .info ul li {
+        display: inline-block;
+        padding: 0 2px;
       }
 
 
@@ -152,18 +204,22 @@ textarea {
       nav {
         float: left;
         margin: 5px 2.5%;
-        width: 25%;
-        background-color: lightgrey;
+        width: 30%;
+        /*background-color: lightgrey;*/
       }
 
       nav ul {
         list-style: none;
       }
 
+      nav ul li {
+        margin: 2px 0;
+      }
+
       nav img {
         display: block;
         margin: 5px auto;
-        max-width: 200px;
+        max-width: 80%;
 
       }
 
@@ -175,10 +231,11 @@ textarea {
 
       .articleContainer {
         
-        background-color: lightyellow;
+        /*background-color: lightyellow;*/
         float: left;
-        margin: 0 2.5%;
-        width: 65%;
+        margin: auto;
+        width: 60%;
+        color: #0f0f0f;
         
       }
 
@@ -193,7 +250,7 @@ textarea {
       }
 
       .articleContent {
-        /*padding: 0 3px;*/
+        padding: 0 .4em;
       }
 
       article img {
@@ -204,7 +261,7 @@ textarea {
       }
 
       .articleFooter {
-        
+
       }
 
 
@@ -223,6 +280,10 @@ textarea {
         color: #ccc;
       }
 
+      footer p {
+        font-size: .4em;
+      }
+
 
 
 
@@ -230,17 +291,35 @@ textarea {
       colors
       =================================== */
 
-      /* myInfo link */
+      /* .info link */
       header a, header a:visited {
         color: #fff;
       }
 
-      /* selected myInfo link */
+      /* selected .info link */
       header a.selected, header a:hover {
-        color: #0063b2;
+        color: #ffab00;
       }
 
+      /* body link */
+      a, a:visited {
+        color: #0c0c0c;
+      }
 
+      /* selected body link */
+      a.selected, a:hover {
+        color: #ff9100;
+      }
+
+  /*  ===================================
+      float clearfix
+      =================================== */
+
+      .group:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
 
 
